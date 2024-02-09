@@ -13,7 +13,7 @@ $nova_consulta = new WP_Query(
 );
 ?>
 
-    <div class="mais-vistos container" id="mais-vistos" style="border: red solid 1px">
+    <div class="mais-vistos container row" id="mais-vistos" style="border: blue solid 3px">
         <h2 id="tituloMaisVisto">Sistemas Mais Acessados</h2>
         
         <?php if ( $nova_consulta->have_posts() ): ?>
@@ -22,7 +22,7 @@ $nova_consulta = new WP_Query(
                 <?php $nova_consulta->the_post(); ?>
                 <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
                 
-                <div class="mais-visto clearfix">           
+                <div class="mais-visto clearfix col-3" style=" border: red solid 3px" >           
                     <?php if( has_post_thumbnail() ): ?>
                         <div class="mais-visto-thumbnail">
                             <a href="<?php the_permalink(); ?>">
