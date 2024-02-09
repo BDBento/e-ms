@@ -1,0 +1,159 @@
+.barra-governo {
+    background: #fff;
+}
+/* *************************************************************************************************************************************** */
+                                                                    /* footer */
+/* *************************************************************************************************************************************** */
+
+
+footer {
+	display: block;
+	overflow: hidden;
+	padding: 0px;
+	margin-top: 50px;
+}
+
+footer ul {
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+footer ul .rodapeMenuSefaz, 
+footer ul .rodapeMenuLinks, 
+footer ul .rodapeMenuSecretarias {
+	display: block;
+	overflow: hidden;
+	width: 276px;
+	float: left
+}
+
+.footer-widget-title, 
+footer ul li strong {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 10px;
+	color: var(--txt_a);
+	font-size: 14px;
+	font-family: 'Titillium Web', sans-serif
+}
+
+.footer-widget-title {
+	font-weight: 700;
+	text-transform: uppercase
+}
+
+footer .textwidget {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+	color: var(--cinza);
+	font-size: 14px;
+	font-family: 'Titillium Web', sans-serif
+}
+
+footer ul li a {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+	color: var(--cinza);
+	font-size: 14px;
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: none
+}
+
+footer ul li a:hover {
+	color: var(--txt_a)
+}
+
+footer .rodapeBg {
+	display: block;
+	overflow: hidden;
+	height: 60px;
+	width: 100%;
+	margin-top: 75px;
+	background: var(--cor-barra-topo)
+}
+
+footer .rodapeBg img {
+	display: block;
+	overflow: hidden;
+	margin-top: 12px
+}
+.barra-rodape{
+    background-color: #2C5595;
+    color: #ffffff;
+}
+
+/* *************************************************************************************************************************************** */
+                                                                    /* contrast */
+/* *************************************************************************************************************************************** */
+
+.contrast{
+	z-index: 99999;
+}
+
+[data-bs-theme=dark] .element .menu-principal {
+	color: #fff !important;
+	background-color:#212529 !important;
+	
+}
+
+[data-bs-theme=dark] .footer-gov {
+	color: #fff !important;
+	background-color:#212529 !important;
+	
+}
+[data-bs-theme=dark] .barra-governo  {
+	color: #fff !important;
+	background-color:#212529 !important;
+	
+}
+[data-bs-theme=dark] a  {
+	color: #fff !important;
+	background-color:#212529 !important;
+	
+}
+
+[data-bs-theme=dark] .menu-principal {
+	color: #fff !important;
+	background-color:#212529 !important;
+	
+}
+
+[data-bs-theme=dark].footer-gov-widger{
+	color: #fff !important;
+	background-color:#014f9f
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.element {
+		color: #fff;
+		background-color:#212529;
+	}
+}
+
+.theme-icon, .theme-icon-active{
+	width: 28px;
+	border : 1px solid #016ad3;
+	height: 28px;
+	border-radius: 30%;
+	padding: 2px;
+	margin-right: 0.5rem;
+}
+
+.btn-link{
+	height:44px ;
+}
+
+.theme-icon-active{
+	background-color: #fff;
+}
+
+.theme-icon{
+	background-color: #ffffff;
+}
+
