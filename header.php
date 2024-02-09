@@ -206,48 +206,7 @@
     </svg>
     <!-- fim desenhos para o modo dark -->
 
-    <div class="container">
-        <div class=" container row " style="
-    align-items: center;">
-            <div class=" align-self-center col-12 col-md-2 identicade-secretaria d-flex justify-content-center"><?php
-                                                                                                                // Se for FrontPage or Home
-                                                                                                                if (is_home() || is_front_page()) {
-                                                                                                                    echo get_bloginfo('name') . '   ';
-                                                                                                                } else {
-                                                                                                                    echo  bloginfo('name');
-                                                                                                                }
-                                                                                                                ?>
-
-            </div>
-            <div class="col-md-1 align-self-center d-flex justify-content-center">
-                <a href="<?php bloginfo('home'); ?>"><svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.764C0 16.7605 0.0937728 17.2416 0.839527 17.9903C1.25836 18.4105 1.87348 18.7887 2.71257 18.77C3.45785 18.7533 3.24242 18.7049 3.24242 20.8928C3.24242 22.5002 3.12518 27.9363 3.3468 28.7472C3.69287 30.0113 4.9747 31.0917 6.30777 31.0917H11.3189C12.4461 31.0917 12.203 29.7189 12.203 29.0875L12.2015 23.3086C12.1967 22.347 12.7836 21.6592 13.5001 21.6592H16.6837C17.0935 21.6592 17.4065 21.9201 17.6142 22.1436C17.8603 22.4088 17.9833 22.7476 17.9828 23.2488C17.9818 24.0946 17.9077 30.1004 18.0139 30.4689C18.114 30.8169 18.439 31.0917 18.865 31.0917H23.8756C24.6377 31.0917 25.3594 30.7135 25.7778 30.3407C27.1712 29.0981 26.941 28.1278 26.941 26.1988V19.5962C26.94 18.848 26.7509 18.7542 27.4713 18.77C29.0107 18.8045 30.0972 17.5106 30.1834 16.1354V15.7831C30.1552 15.3351 30.0163 14.8895 29.7483 14.4898C29.3639 13.9159 19.1062 3.77306 17.6712 2.33803C16.6158 1.28258 16.3941 0.908264 14.8562 0.908264C13.784 0.908264 13.1009 1.74975 12.5423 2.30835L1.40008 13.4501C0.841487 14.0092 0 14.6923 0 15.764Z" fill="#0F4B91" />
-                    </svg></a>
-            </div>
-
-            <nav class="menu-principal main-menu col">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4 d-md-none">
-                            <button id="menuBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
-                                <i class="fa fa-bars"></i> MENU
-                            </button>
-                        </div>
-                        <div class="col-12" id="menu_topo1">
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-
-                              
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-        </div>
-    </div>
+    
 
 
     <?php wp_body_open(); ?>

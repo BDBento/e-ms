@@ -1,23 +1,23 @@
 <footer class="footer-card">
     
-    <div class="container">
-    <div class="footer-gov-widger row ">
-        <div>
-            <div class="row">
-                <div class=" widgets-rodape  col-7 ">
-                    <div class="footer ">
-                        <?php get_sidebar('footer'); ?>
-                    </div>
-                    <div class="text-end row align-items-center align-middle col-5">
-                        <div class="row">
-                            <div class="col-5 footer_custon_logo"><?php the_custom_logo();?></div>
-                            <img class="col-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_governo_colorido.svg" alt="Governo de MS" class="d-none d-md-inline">
+    <div class="container footer-conteudo">
+        <div class="footer-gov-widger row ">
+            <div>
+                <div class="row">
+                    <div class=" widgets-rodape  col-7 ">
+                        <div class="footer ">
+                            <?php get_sidebar('footer'); ?>
+                        </div>
+                        <div class="text-end row align-items-center align-middle col-5">
+                            <div class="row">
+                                <div class="col-5 footer_custon_logo"><?php the_custom_logo();?></div>
+                                <img class="col-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_governo_colorido.svg" alt="Governo de MS" class="d-none d-md-inline">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="barra-rodape">
         <div class="container">
@@ -60,6 +60,9 @@ function acessibilidade_menu()
 <?php }
 
 add_action('wp_footer', 'acessibilidade_menu', 70);
+
+
+
 wp_footer(); ?>
 
 </body>
