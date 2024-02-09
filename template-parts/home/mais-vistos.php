@@ -1,7 +1,7 @@
 <?php
 $nova_consulta = new WP_Query( 
     array(
-        'posts_per_page'      => 10,                 // Máximo de 5 artigos
+        'posts_per_page'      => 12,                 // Máximo de 5 artigos
         'no_found_rows'       => true,              // Não conta linhas
         'post_status'         => 'publish',         // Somente posts publicados
         'ignore_sticky_posts' => true,              // Ignora posts fixos
