@@ -223,10 +223,31 @@ footer .rodapeBg img {
 	text-align: left;
 }
 .mais-visto-thumbnail img{
-	max-width: 265px;
-	height: auto;
-	margin: 10px;
+	width: 180px;
+	height: 90px;
+	margin: 16px;
 }
 .mais-vistos-card{
 	margin: 10px;
+	width: 264px;	
+	height: 204px;
+	border-radius: 8px;
+	border: 2px solid #c7bebe;
+}
+
+.mais-vistos-card:hover{
+	border: 2px solid #004f9f;
+}
+.maist-vistos-card-title{
+	width: 84px;
+	height: 25px;
+	top: 84px;
+	left: 16px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #000000;
 }
