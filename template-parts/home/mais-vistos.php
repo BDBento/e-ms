@@ -14,8 +14,9 @@ $nova_consulta = new WP_Query(
 ?>
 
     <div class="mais-vistos container row" id="mais-vistos" style="border: blue solid 3px">
-        <h2 id="tituloMaisVisto">Sistemas Mais Acessados</h2>
-        
+        <h2 id="tituloMaisVisto">Sistemas mais acessados</h2>
+        <h3 id="subTituloMaisVisto">Os sistemas que são mais utilizados</h3>
+
         <?php if ( $nova_consulta->have_posts() ): ?>
             <?php while ( $nova_consulta->have_posts() ): ?>
             

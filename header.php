@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
 
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link id="bootstrap" rel="stylesheet" href="<?= get_template_directory_uri() . '/assets/css/bootstrap.min.css'; ?>" type="text/css" media="all">
     <link id="fancyCss" rel="stylesheet" href="<?= get_template_directory_uri() . '/vendors/fancybox-master/dist/jquery.fancybox.min.css'; ?>" type="text/css" media="all">
@@ -129,7 +131,7 @@
 
                         <div class="sub-header col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
 
-                            <nav class="nav">
+                            <nav class="nav nav-redes-sociais">
                                 <!-- instagran -->
                                 <a href="https://www.instagram.com/governoms/" class="nav-link" target="_blank">
                                     <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
