@@ -36,11 +36,11 @@ if ($query->have_posts()) {
     while ($query->have_posts()) {
         $query->the_post();
         $title = get_the_title();
-        $first_letra = strtoupper(substr($title, 0, 1));
+        $primeira_letra = strtoupper(substr($title, 0, 1));
 
-        // Check if the post title starts with the selected letra
-        if ($first_letra == $letra_selecionada) {
-            // Display the post content or any other desired output
+        // Verifica se o título do post começa com a letra selecionada
+        if ($primeira_letra == $letra_selecionada) {
+            // Exibe o conteúdo do post ou qualquer outro resultado desejado
             ?>
             <h2><?php the_title(); ?></h2>
             <?php
