@@ -24,11 +24,14 @@ $args = array(
     'post_type' => 'post',
     'orderby' => 'title',
     'order' => 'ASC',
-    'posts_per_page' => 12
+    'posts_per_page' => 33
 );
 
 $query = new WP_Query($args);
 
+?>
+<div class="container">
+<?php
 if ($query->have_posts()) {
     while ($query->have_posts()) {
         $query->the_post();
@@ -38,7 +41,9 @@ if ($query->have_posts()) {
         // Check if the post title starts with the selected letter
         if ($first_letter == $letra_selecionada) {
             // Display the post content or any other desired output
-            the_title();
+            ?>
+            <h2><?php the_title(); ?></h2>
+            <?php
             the_excerpt();
         }
     }
@@ -46,3 +51,4 @@ if ($query->have_posts()) {
 
 wp_reset_postdata();
 ?>
+</div>
