@@ -13,37 +13,43 @@ $nova_consulta = new WP_Query(
 );
 ?>
 
-    <div class="mais-vistos container row" id="mais-vistos" style="border: blue solid 3px">
+    <div class="mais-vistos container" id="mais-vistos">
         <h2 id="tituloMaisVisto">Sistemas mais acessados</h2>
         <h3 id="subTituloMaisVisto">Os sistemas que são mais utilizados</h3>
-
-        <?php if ( $nova_consulta->have_posts() ): ?>
-            <?php while ( $nova_consulta->have_posts() ): ?>
-            
-                <?php $nova_consulta->the_post(); ?>
-                <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
+        <div class="row">
+            <?php if ( $nova_consulta->have_posts() ): ?>
+                <?php while ( $nova_consulta->have_posts() ): ?>
                 
-                <div class="mais-visto mais-vistos-card clearfix col-3" >           
-                    <?php if( has_post_thumbnail() ): ?>
-                        <div class="mais-visto-thumbnail">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail('mais-visto-thumbnail'); ?>
+                    <?php $nova_consulta->the_post(); ?>
+                    <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
+                    <div class="col-3">
+                        <div class="mais-visto mais-vistos-card clearfix" >           
+                            <?php if( has_post_thumbnail() ): ?>
+                                <div class="mais-visto-thumbnail">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php the_post_thumbnail('mais-visto-thumbnail'); ?>
+                                    </a>
+                                </div> <!-- .mais-visto-thumbnail -->
+                            <?php endif; // has_post_thumbnail ?>
+                            
+                            <h4 class="mais-vistos-card-title">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title();?>
+                                </a>
+                                <!-- <span class="contadorMaisVisto">(<?php echo $tp_post_counter; ?>)</span> -->
+                            </h4> <!-- .mais-visto-titulo -->
+        
+                            <a class="mais-vistos-card-content" href="<?php the_permalink(); ?>">
+                                <?php the_excerpt();?>
                             </a>
-                        </div> <!-- .mais-visto-thumbnail -->
-                    <?php endif; // has_post_thumbnail ?>
+                            
+                        
+                        </div> <!-- .mais-visto -->
+                    </div>
                     
-                    <h4 class="maist-vistos-card-title">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_title();?>
-                        </a>
-                        <span class="contadorMaisVisto">(<?php echo $tp_post_counter; ?>)</span>
-                    </h4> <!-- .mais-visto-titulo -->
-                
-                </div> <!-- .mais-visto -->
-                
-            <?php endwhile; ?>
-        <?php endif; // have_posts ?>
+                <?php endwhile; ?>
+            <?php endif; // have_posts ?>
+        </div>
 
         <?php wp_reset_postdata(); ?>
     </div> <!-- .mais-vistos -->
-

@@ -202,8 +202,13 @@ footer .rodapeBg img {
 /* *************************************************************************************************************************************** */
                                                               /* MaisVisto */
 /* *************************************************************************************************************************************** */
+.mais_acessados{
+	margin-bottom: 80px;
+}
+
 .mais-vistos{
 	margin-top: 2em;
+	padding: 0;
 }
 #tituloMaisVisto{
 	font-family: Roboto;
@@ -223,16 +228,15 @@ footer .rodapeBg img {
 	text-align: left;
 }
 .mais-visto-thumbnail img{
-	width: 180px;
-	height: 90px;
-	margin: 16px;
+	margin: 15px 0;
+	height: 60px;
+	width: auto;
 }
 .mais-vistos-card{
-	margin: 10px;
-	width: 264px;	
-	height: 204px;
+	height: 100%;
+	padding: 0 15px;
 	border-radius: 8px;
-	border: 2px solid #c7bebe;
+	border: 1px solid #D4D7D8;
 }
 
 .mais-vistos-card:hover{
@@ -252,8 +256,21 @@ footer .rodapeBg img {
 	color: #000000;
 }
 
+.maist-vistos-card-title a{
+	color: #080B0C;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
 
-/*------- sist ordenado -----*/
+.mais-vistos-card-content{
+	color: #080B0C;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* *************************************************************************************************************************************** */
+                                                              /* sist ordenado */
+/* *************************************************************************************************************************************** */
 
 .text-sistem-ordenado h2{
 	font-size: 24px;
@@ -279,20 +296,25 @@ footer .rodapeBg img {
 	list-style-type: none;
 	text-align: center;
     width: 100%;
-    padding: 2px 8px;
     color: #004F9F;
     font-weight: 800;
     font-size: 20px;
     border-left: 1px solid #D4D7D8;
 }
 
+.alf-ordenado ul li a{
+	display: block;
+}
+
 .alf-ordenado ul li:hover{
     background: #E6EDF5;
 	border-right: 1px solid #D4D7D8;
-	padding: 2px 7px 2px 8px;
+
 }
 
-/*------- categorias -----*/
+/* *************************************************************************************************************************************** */
+                                                              /* categorias */
+/* *************************************************************************************************************************************** */
 
 .text-categorias h2{
 	font-size: 24px;
@@ -326,4 +348,10 @@ footer .rodapeBg img {
     font-size: 18px;
     font-weight: bold;
     color: #004F9F;
+}
+
+.active-alfa{
+	background: #f51515 !important;
+	margin: 0px;
+	display: block;
 }
