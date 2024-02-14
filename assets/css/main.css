@@ -251,3 +251,79 @@ footer .rodapeBg img {
 	text-align: left;
 	color: #000000;
 }
+
+
+/*------- sist ordenado -----*/
+
+.text-sistem-ordenado h2{
+	font-size: 24px;
+    font-weight: bold;
+    color: #080B0C;
+}
+
+.text-sistem-ordenado p{
+	color: #6E757A;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.alf-ordenado ul{
+	display: grid;
+    grid-auto-flow: column;
+    padding: 0;
+    border: 1px solid #D4D7D8;
+    border-radius: 2px;
+}
+
+.alf-ordenado ul li{
+	list-style-type: none;
+	text-align: center;
+    width: 100%;
+    padding: 2px 8px;
+    color: #004F9F;
+    font-weight: 800;
+    font-size: 20px;
+    border-left: 1px solid #D4D7D8;
+}
+
+.alf-ordenado ul li:hover{
+    background: #E6EDF5;
+	border-right: 1px solid #D4D7D8;
+	padding: 2px 7px 2px 8px;
+}
+
+/*------- categorias -----*/
+
+.text-categorias h2{
+	font-size: 24px;
+    font-weight: bold;
+    color: #080B0C;
+}
+
+.text-categorias p{
+	color: #6E757A;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.categoria-item{
+	width: 100%;
+	padding: 10px;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid #004F9F;
+}
+
+.categoria-item img{
+    padding: 0;
+    width: 40px;
+}
+
+.categoria-item p{
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004F9F;
+}
