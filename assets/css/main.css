@@ -424,6 +424,7 @@ footer .rodapeBg img {
 .cabecario-post{
 	background-color: #DDDDDD;
 	color: #004F9F;;
+	margin-bottom: 32px;
 }
 .cabecario-post a{
 	color: #004F9F;;
@@ -451,16 +452,34 @@ footer .rodapeBg img {
 	border-radius: 8px;
 }
 .vertical-menu ul{
+	border: 1px solid #D4D7D8;
 	padding: 0;
 	margin: 0;
+	border-radius: 8px;
 }
 
 .vertical-menu li{	
+	border-bottom: 1px solid #D4D7D8;
+	background: #F4F4F5;
 	list-style: none;
-	padding: 0 15px;
+    padding: 12px;
+}
+
+.vertical-menu li:hover{
+    background: #004F9F;
+	color: white;
+}
+
+#item-menu-inicio{
+    border-radius: 8px 8px 0 0;
+}
+
+#item-menu-fim{
+	border-radius: 0 0 8px 8px;
+	border: none;
 }
 
 .menu-flutuante-post-selecionado{
-	background-color: #004F9F;
+	background-color: #004F9F !important;
 	color: #ffffff;
 }
