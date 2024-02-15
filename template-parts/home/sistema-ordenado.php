@@ -8,47 +8,53 @@
             <ul>
                 <?php
                 $letra_selecionada = isset($_GET['letra-selecionada']) ? $_GET['letra-selecionada'] : '';
-                $letras = range('A', 'Z');
-                foreach ($letras as $letra) {
-                    $active_class = ($letra_selecionada == $letra) ? 'active-alfa' : '';
-                    echo '<li><a href="?letra-selecionada=' . $letra . '" class="' . $active_class . '">' . $letra . '</a></li>';
+                $letters = range('A', 'Z');
+                foreach ($letters as $letter) {
+                    $active_class = ($letra_selecionada == $letter) ? 'active-alfa' : '';
+                    echo '<li><a href="?letra-selecionada=' . $letter . '" class="' . $active_class . '">' . $letter . '</a></li>';
                 }
                 ?>
             </ul>
         </div>
     </div>
-</section>
 
-<?php
-$args = array(
-    'post_type' => 'post',
-    'orderby' => 'title',
-    'order' => 'ASC',
-    'posts_per_page' => 33
-);
 
-$query = new WP_Query($args);
 
-?>
 <div class="container">
-<?php
-if ($query->have_posts()) {
-    while ($query->have_posts()) {
-        $query->the_post();
-        $title = get_the_title();
-        $primeira_letra = strtoupper(substr($title, 0, 1));
+    <div class="ordenado-content row">
+        <?php
+        $args = array(
+            'post_type' => 'post',
+            'orderby' => 'title',
+            'order' => 'ASC',
+            'posts_per_page' => 33
+        );
 
-        // Verifica se o título do post começa com a letra selecionada
-        if ($primeira_letra == $letra_selecionada) {
-            // Exibe o conteúdo do post ou qualquer outro resultado desejado
-            ?>
-            <h2><?php the_title(); ?></h2>
-            <?php
-            the_excerpt();
+        $query = new WP_Query($args);
+        
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                $title = get_the_title();
+                $first_letter = strtoupper(substr($title, 0, 1));
+        
+                // Check if the post title starts with the selected letter
+                if ($first_letter == $letra_selecionada) {
+                    // Display the post content or any other desired output
+                    ?>
+                    <div class="item-ordenado col-4">
+                    <h2><?php the_title(); ?></h2>
+                    <?php
+                    the_excerpt(5);
+                    ?>
+                    </div><?php
+                }
+            }
         }
-    }
-}
-
-wp_reset_postdata();
-?>
+        
+        wp_reset_postdata();
+        ?>
+        </div>
+    </div>
 </div>
+</section>

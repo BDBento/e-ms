@@ -21,9 +21,10 @@ $nova_consulta = new WP_Query(
                 <?php while ( $nova_consulta->have_posts() ): ?>
                 
                     <?php $nova_consulta->the_post(); ?>
+                    
                     <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
-                    <div class="col-3">
-                        <div class="mais-visto mais-vistos-card clearfix" >           
+                    <div class="col-3">   
+                        <div class="mais-visto mais-vistos-card clearfix" >          
                             <?php if( has_post_thumbnail() ): ?>
                                 <div class="mais-visto-thumbnail">
                                     <a href="<?php the_permalink(); ?>">
@@ -38,15 +39,14 @@ $nova_consulta = new WP_Query(
                                 </a>
                                 <!-- <span class="contadorMaisVisto">(<?php echo $tp_post_counter; ?>)</span> -->
                             </h4> <!-- .mais-visto-titulo -->
-        
                             <a class="mais-vistos-card-content" href="<?php the_permalink(); ?>">
-                                <?php the_excerpt(20);?>
+                                <?php the_excerpt();?>
                             </a>
-                            
-                        
+                            <a class="mais-vistos-acesso" href="<?php the_permalink(); ?>">
+                                <p >Acessar sistema</p>
+                            </a>
                         </div> <!-- .mais-visto -->
                     </div>
-                    
                 <?php endwhile; ?>
             <?php endif; // have_posts ?>
         </div>
