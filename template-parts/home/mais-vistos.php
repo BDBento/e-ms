@@ -40,7 +40,7 @@ $nova_consulta = new WP_Query(
                             </h4> <!-- .mais-visto-titulo -->
         
                             <a class="mais-vistos-card-content" href="<?php the_permalink(); ?>">
-                                <?php the_excerpt();?>
+                                <?php the_excerpt(20);?>
                             </a>
                             
                         

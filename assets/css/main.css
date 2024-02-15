@@ -12,7 +12,7 @@ a{
 }
 
 a:hover {
-	color: var(--text-hover:);
+	color: var(--text-hover);
 }
 
 /* *************************************************************************************************************************************** */
@@ -268,9 +268,18 @@ footer .rodapeBg img {
     font-size: 12px;
     font-weight: 400;
 }
+
+.mais-vistos-acesso p{
+	margin: 0;
+    text-align: end;
+    color: #004F9F;
+}
 /* *************************************************************************************************************************************** */
                                                               /* sist ordenado */
 /* *************************************************************************************************************************************** */
+.sistema-ordenado{
+	margin-bottom: 80px;
+}
 
 .text-sistem-ordenado h2{
 	font-size: 24px;
@@ -307,14 +316,30 @@ footer .rodapeBg img {
 }
 
 .alf-ordenado ul li:hover{
-    background: #E6EDF5;
-	border-right: 1px solid #D4D7D8;
-
+    background: #E6EDF5; 
 }
 
+.item-ordenado h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: #004F9F;
+}
+
+.item-ordenado p{
+	font-size: 12px;
+	font-weight: 400;
+	color: #080B0C;
+}
+
+.item-ordenado{
+	padding: 0 30px 0 12px;
+}
 /* *************************************************************************************************************************************** */
                                                               /* categorias */
 /* *************************************************************************************************************************************** */
+.categorias{
+	margin-bottom: 80px;
+}
 
 .text-categorias h2{
 	font-size: 24px;
@@ -330,11 +355,16 @@ footer .rodapeBg img {
 
 .categoria-item{
 	width: 100%;
-	padding: 10px;
+    padding: 23px 16px;
+	background: white;
     align-items: center;
     border: none;
+	margin: 0;
     border-radius: 3px;
     border-bottom: 2px solid #004F9F;
+}
+.categoria-item:hover{
+    background: #E6EDF5;
 }
 
 .categoria-item img{
@@ -348,13 +378,36 @@ footer .rodapeBg img {
     font-size: 18px;
     font-weight: bold;
     color: #004F9F;
+    flex: auto;
 }
 
 .active-alfa{
-	background: #f51515 !important;
+	background: #004F9F !important;
 	margin: 0px;
+	color: white;
 	display: block;
 }
+
+/* *************************************************************************************************************************************** */
+                                                              /* search */
+/* *************************************************************************************************************************************** */
+
+.search_content label{
+    width: 100%;
+}
+
+.search_content .search-field{
+	margin: 50px 0 10px;
+	width: 100%;
+	padding: 8px 16px;
+	border: 1px solid #D4D7D8 !important;
+	border-radius: 3px;
+}
+
+.search_content .search-submit{
+	display: none;
+}
+
 
 /* *************************************************************************************************************************************** */
                                                               /* cabecariio post */
