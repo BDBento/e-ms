@@ -42,12 +42,17 @@
                 if ($first_letter == $letra_selecionada) {
                     // Display the post content or any other desired output
                     ?>
-                    <div class="item-ordenado col-4">
-                    <h2><?php the_title(); ?></h2>
+                   
+                        <div class="item-ordenado col-4">
+                            <a href="<?php the_permalink(); ?>">
+                            <h2><?php the_title(); ?></h2>
+                            <?php
+                                the_excerpt(5);
+                             ?>
+                            </a>
+                        </div>
+                    </a>
                     <?php
-                    the_excerpt(5);
-                    ?>
-                    </div><?php
                 }
             }
         }
