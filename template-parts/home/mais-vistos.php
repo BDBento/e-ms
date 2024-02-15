@@ -23,7 +23,7 @@ $nova_consulta = new WP_Query(
                     <?php $nova_consulta->the_post(); ?>
                     
                     <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
-                    <div class="col-3">   
+                    <div class="col-3 mais-vistos-box">   
                         <div class="mais-visto mais-vistos-card clearfix" >          
                             <?php if( has_post_thumbnail() ): ?>
                                 <div class="mais-visto-thumbnail">

@@ -27,8 +27,10 @@
             'post_type' => 'post',
             'orderby' => 'title',
             'order' => 'ASC',
-            'posts_per_page' => 33
+            'posts_per_page' => -1, 
+           
         );
+
 
         $query = new WP_Query($args);
         
@@ -56,10 +58,27 @@
                 }
             }
         }
+
+        ?>
+        <div class="paginacao">
+            <ul class="list-unstyled list-inline">
+                <?php
+                if (get_previous_posts_link()) {
+                    printf('<li class="txt">%s</li>', get_previous_posts_link());
+                }
+                if (get_next_posts_link()) {
+                    printf('<li class="txt">%s</li>', get_next_posts_link());
+                }
+                ?>
+            </ul>
+        </div>
+        <?php
         
+
         wp_reset_postdata();
         ?>
         </div>
     </div>
 </div>
 </section>
+
