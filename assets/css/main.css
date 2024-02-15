@@ -355,3 +355,51 @@ footer .rodapeBg img {
 	margin: 0px;
 	display: block;
 }
+
+/* *************************************************************************************************************************************** */
+                                                              /* cabecariio post */
+/* *************************************************************************************************************************************** */
+
+.cabecario-post{
+	background-color: #DDDDDD;
+	color: #004F9F;;
+}
+.cabecario-post a{
+	color: #004F9F;;
+}
+.botao-voltar{
+	background-color: #DDDDDD;
+	border: #014f9f solid 3px;
+	border-radius: 20px;
+	color: #004F9F;
+	margin-top: 80px;
+	padding: 3px 25px;
+	font-weight: 600;
+}
+
+.menu-flutuante-post{
+	
+	padding: 0px;
+}
+.vertical-menu{
+	position: sticky;
+	top: 42%;
+	background-color: #dddddd;
+	width: 90%;
+	display: inline-block;
+	border-radius: 8px;
+}
+.vertical-menu ul{
+	padding: 0;
+	margin: 0;
+}
+
+.vertical-menu li{	
+	list-style: none;
+	padding: 0 15px;
+}
+
+.menu-flutuante-post-selecionado{
+	background-color: #004F9F;
+	color: #ffffff;
+}
