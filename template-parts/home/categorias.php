@@ -5,7 +5,7 @@
                 <p>Encontre o sistema deseja navegando pelas categorias abaixo.</p>
             </div>
             <div class="btn-categotias">
-                <div class="row">
+                <div class="categoria_grid row">
                     <div class="categoria_content col-3">
                         <a href="#">
                             <button class="categoria-item row"><img class="col-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/Administração.svg" alt=""><p class="col-9">Administração Pública</p></button>

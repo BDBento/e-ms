@@ -242,7 +242,7 @@ footer .rodapeBg img {
 }
 
 .mais-vistos-card:hover{
-	border: 2px solid #004f9f;
+	background: #F7FAFC;
 }
 .maist-vistos-card-title{
 	width: 84px;
@@ -383,6 +383,10 @@ footer .rodapeBg img {
     font-weight: bold;
     color: #004F9F;
     flex: auto;
+}
+
+.categoria_grid{
+	gap: 15px 0;
 }
 
 .active-alfa{
