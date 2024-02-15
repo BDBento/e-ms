@@ -234,13 +234,15 @@ footer .rodapeBg img {
 }
 .mais-vistos-card{
 	height: 100%;
-	padding: 0 15px;
-	border-radius: 8px;
-	border: 1px solid #D4D7D8;
+    display: grid;
+    padding: 0px 15px 10px;
+    border-radius: 8px;
+    border: 1px solid #D4D7D8;
+    align-content: end;
 }
 
 .mais-vistos-card:hover{
-	border: 2px solid #004f9f;
+	background: #F7FAFC;
 }
 .maist-vistos-card-title{
 	width: 84px;
@@ -356,7 +358,9 @@ footer .rodapeBg img {
 .categoria-item{
 	width: 100%;
     padding: 23px 16px;
+	height: 88px;
 	background: white;
+	align-content: center;
     align-items: center;
     border: none;
 	margin: 0;
@@ -379,6 +383,10 @@ footer .rodapeBg img {
     font-weight: bold;
     color: #004F9F;
     flex: auto;
+}
+
+.categoria_grid{
+	gap: 15px 0;
 }
 
 .active-alfa{
