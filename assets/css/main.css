@@ -238,7 +238,6 @@ footer .rodapeBg img {
     padding: 0px 15px 10px;
     border-radius: 8px;
     border: 1px solid #D4D7D8;
-    align-content: end;
 }
 
 .mais-vistos-card:hover{
@@ -265,10 +264,19 @@ footer .rodapeBg img {
     margin: 0;
 }
 
+.mais-vistos-card-title{
+	height: 29px;
+}
+
 .mais-vistos-card-content{
 	color: #080B0C;
     font-size: 12px;
+	height: 70px;
     font-weight: 400;
+}
+
+.mais-vistos-acesso{
+	align-self: self-end;
 }
 
 .mais-vistos-acesso p{
@@ -276,6 +284,11 @@ footer .rodapeBg img {
     text-align: end;
     color: #004F9F;
 }
+
+.mais-visto-thumbnail{
+	height: 90px;
+}
+
 /* *************************************************************************************************************************************** */
                                                               /* sist ordenado */
 /* *************************************************************************************************************************************** */

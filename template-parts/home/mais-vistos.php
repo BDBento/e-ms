@@ -24,15 +24,15 @@ $nova_consulta = new WP_Query(
                     
                     <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
                     <div class="col-3">   
-                        <div class="mais-visto mais-vistos-card clearfix" >          
-                            <?php if( has_post_thumbnail() ): ?>
-                                <div class="mais-visto-thumbnail">
+                        <div class="mais-visto mais-vistos-card clearfix" >    
+                            <div class="mais-visto-thumbnail">      
+                                <?php if( has_post_thumbnail() ): ?>
                                     <a href="<?php the_permalink(); ?>">
                                         <?php the_post_thumbnail('mais-visto-thumbnail'); ?>
                                     </a>
-                                </div> <!-- .mais-visto-thumbnail -->
-                            <?php endif; // has_post_thumbnail ?>
-                            
+                                     <!-- .mais-visto-thumbnail -->
+                                <?php endif; // has_post_thumbnail ?>
+                            </div>
                             <h4 class="mais-vistos-card-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title();?>
