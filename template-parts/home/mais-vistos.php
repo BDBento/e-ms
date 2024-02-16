@@ -24,7 +24,7 @@ $nova_consulta = new WP_Query(
                     
                     <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
                     <div class="col-3">   
-                        <div class="mais-visto mais-vistos-card clearfix" >    
+                        <div class="mais-visto mais-vistos-card" >    
                             <div class="mais-visto-thumbnail">      
                                 <?php if( has_post_thumbnail() ): ?>
                                     <a href="<?php the_permalink(); ?>">

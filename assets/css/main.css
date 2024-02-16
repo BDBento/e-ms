@@ -271,7 +271,6 @@ footer .rodapeBg img {
 .mais-vistos-card-content{
 	color: #080B0C;
     font-size: 12px;
-	height: 70px;
     font-weight: 400;
 }
 
@@ -374,7 +373,9 @@ footer .rodapeBg img {
 .categoria-item{
 	width: 100%;
     padding: 23px 16px;
-	height: 88px;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 25% 75%;
 	background: white;
 	align-content: center;
     align-items: center;
@@ -383,6 +384,7 @@ footer .rodapeBg img {
     border-radius: 3px;
     border-bottom: 2px solid #004F9F;
 }
+
 .categoria-item:hover{
     background: #E6EDF5;
 }
@@ -402,7 +404,9 @@ footer .rodapeBg img {
 }
 
 .categoria_grid{
-	gap: 15px 0;
+	gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
 }
 
 .active-alfa{
@@ -523,11 +527,11 @@ footer .rodapeBg img {
     .mais-vistos-card-content{
 		height: 120px;
 	}
-    .categoria_content{
-        width: 50%;
-	}
 	.item-ordenado{
 		width: 50%;
+	}
+	.categoria_grid{
+		grid-template-columns: repeat(2, auto);
 	}
 	.alf-ordenado ul li{
 		height: 30px;
@@ -599,12 +603,8 @@ footer .rodapeBg img {
 		height: 180px;
 	}
 }
-@media (max-width: 350px){
+@media (max-width: 365px){
 	.categoria-item{
-		justify-content: center;
-        height: 120px;
-	}
-	.categoria-item p{
-		text-align: center;
+    	grid-template-columns: auto;
 	}
 }
