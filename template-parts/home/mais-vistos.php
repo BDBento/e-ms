@@ -1,7 +1,7 @@
 <?php
 $nova_consulta = new WP_Query( 
     array(
-        'posts_per_page'      => 12,                 // Máximo de 5 artigos
+        'posts_per_page'      => 8,                 // Máximo de 5 artigos
         'no_found_rows'       => true,              // Não conta linhas
         'post_status'         => 'publish',         // Somente posts publicados
         'ignore_sticky_posts' => true,              // Ignora posts fixos
@@ -23,10 +23,13 @@ $nova_consulta = new WP_Query(
                     <?php $nova_consulta->the_post(); ?>
                     
                     <?php $tp_post_counter = get_post_meta( $post->ID, 'tp_post_counter', true );?>
+
                     <div class="col-3">   
                         <div class="mais-visto mais-vistos-card" >    
                             <div class="mais-visto-thumbnail">      
                                 <?php if( has_post_thumbnail() ): ?>
+
+                   
                                     <a href="<?php the_permalink(); ?>">
                                         <?php the_post_thumbnail('mais-visto-thumbnail'); ?>
                                     </a>
