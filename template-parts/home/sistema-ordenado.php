@@ -11,7 +11,7 @@
                 $letters = range('A', 'Z');
                 foreach ($letters as $letter) {
                     $active_class = ($letra_selecionada == $letter) ? 'active-alfa' : '';
-                    echo '<li><a href="?letra-selecionada=' . $letter . '" class="' . $active_class . '">' . $letter . '</a></li>';
+                    echo '<li class="' . $active_class . '"><a href="?letra-selecionada=' . $letter . '">' . $letter . '</a></li>';
                 }
                 ?>
             </ul>
