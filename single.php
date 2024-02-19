@@ -16,7 +16,7 @@ get_header();?>
                                 <h1 class=""><?php the_title(); ?></h1>
                                 <ul class="list-inline list-unstyled">
                                     <li class="list-inline-item">
-                                    <div class="tags mt-2"><span><i class="bi bi-house-door-fill"></i>  <i class="bi bi-caret-right"></i>  Sistemas </span><?php the_tags(' <i class="bi bi-caret-right"></i> '); ?></div>
+                                    <div class="tags mt-2"><span><i class="bi bi-house-door-fill"></i>  <i class="bi"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Breadcrumb.svg" alt=""></i>  Sistemas </span><?php the_tags(' <i class="bi bi-caret-right"></i> '); ?></div>
                                     </li>
                                 </ul>
                             </div>

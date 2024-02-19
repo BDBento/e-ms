@@ -10,8 +10,11 @@
                 $letra_sel = isset($_POST['letra-sel']) ? $_POST['letra-sel'] : '';
                 $letters = range('A', 'Z');
                 foreach ($letters as $letter) {
-                    $active_class = ($letra_sel == $letter) ? 'active-alfa' : '';
-                    echo '<li><a href="#" onclick="submitForm(\'' . $letter . '\')" class="' . $active_class . '">' . $letter . '</a></li>';
+
+                    $active_class = ($letra_selecionada == $letter) ? 'active-alfa' : '';
+                    echo '<li class="' . $active_class . '"><a href="?letra-selecionada=' . $letter . '">' . $letter . '</a></li>';
+
+                    
                 }
                 ?>
             </ul>
