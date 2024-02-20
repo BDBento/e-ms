@@ -13,16 +13,14 @@ get_header();?>
                             <div class="row">
                             <div class="col-10">
                                 <?php the_category(', '); ?>
-                                <h1 class=""><?php the_title(); ?></h1>
+                                <h1 class="">E-ms</h1>
                                 <ul class="list-inline list-unstyled">
                                     <li class="list-inline-item">
                                     <div class="tags mt-2"><span><i class="bi bi-house-door-fill"></i>  <i class="bi bi-caret-right"></i>  Sistemas </span><?php the_tags(' <i class="bi bi-caret-right"></i> '); ?></div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-2">
-                                <a id="back" href="javascript: history.go(-1)"><button class="botao-voltar"><i class="bi bi-caret-left-fill"></i> Voltar</button></a>
-                            </div>
+                            
                             </div>
                         </div>
                     </div> 
