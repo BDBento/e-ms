@@ -1,6 +1,6 @@
 <?php
 
-get_header(); 
+get_header('interna');
 
 get_template_part( 'template-parts/home/e-ms-home','e-ms' );
 

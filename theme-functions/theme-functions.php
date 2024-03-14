@@ -2,15 +2,26 @@
 
 function add_theme_scripts(){
 
-    wp_enqueue_script('jquery_js', get_template_directory_uri().'/assets/js/jquery.js', array('jquery'),'3.7.1', true );
+    wp_enqueue_script('jquery_js', get_template_directory_uri().'/assets/js/jquery.js', array('jquery'),'3.4.1', true );
     
     wp_enqueue_script('maior_menor', get_template_directory_uri().'/assets/js/maior_menor.js', array('jquery'),'3.6.0' );
 
     wp_enqueue_script( 'contrast', get_template_directory_uri().'/assets/js/contrast.js',true );
 
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'bootstrap-buble-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '5.3.3', true );
 
-    wp_enqueue_script( 'bootstrap-buble-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '5.3.3', true );
+    
+    wp_enqueue_style( 'sa2css', get_template_directory_uri().'/libs/sweetalert2/sweetalert2.min.css', '', '', $media = 'all' );
+
+	wp_enqueue_script( 'sa2js', get_template_directory_uri().'/libs/sweetalert2/sweetalert2.min.js', array( 'jquery' ), '' , true );
+
+    wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800', '', '', $media = 'all' );
+
+	wp_enqueue_script( 'datatablejs', get_template_directory_uri().'/libs/DataTables/datatables.min.js', 'jquery', false, true );
+
+    wp_enqueue_style( 'datatablecss', get_template_directory_uri().'/libs/DataTables/datatables.min.css', '', '', $media = 'all' );
+
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
@@ -39,7 +50,7 @@ function footer_widgets() {
         'name'          => 'Widget Footer',
         'id'            => 'footer-widgets',
         'description'   => 'Widgets para o footer',
-        'before_widget' => '<div id="%1$s" style="display:flex" class="footer-widget %2$s> ',
+        'before_widget' => '<div id="%1$s" style="display:flex" class="footer-widget %2$s"> ',
         'after_widget'  => '</div>',
         'before_title'  => '<h6 class="footer-widget-title col-4">',
         'after_title'   => '</h6>',
@@ -193,8 +204,6 @@ add_theme_support( 'custom-background' );
 // Add theme support for automatic feed links
 add_theme_support( 'automatic-feed-links' );
 
-// Add theme support for post formats
-add_theme_support( 'post-formats', array( 'image', 'gallery', 'video', 'audio' ) );
 
 // Add theme support for custom logo
 add_theme_support( 'custom-logo' );
@@ -220,3 +229,8 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
+
+
+add_filter( 'acf/admin/prevent_escaped_html_notice', '__return_true' );
+
+add_filter( 'acf/the_field/escape_html_optin', '__return_true' );

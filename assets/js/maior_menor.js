@@ -24,17 +24,17 @@ $z(document).ready(function() {
         return false;
     });
 
-    $z("#aumentar-fonte").click(function() {
-        var size = $z(".nav-link").css('font-size');
+    // $z("#aumentar-fonte").click(function() {
+    //     var size = $z(".nav-link").css('font-size');
 
-        size = size.replace('px', '');
-        size = parseInt(size) + 4;
+    //     size = size.replace('px', '');
+    //     size = parseInt(size) + 4;
 
-        $z(".nav-link").animate({
-            'font-size': size + 'px'
-        });
-        return false;
-    });
+    //     $z(".nav-link").animate({
+    //         'font-size': size + 'px'
+    //     });
+    //     return false;
+    // });
 
     $z("#diminuir-fonte").click(function() {
         var size = $z("#content p").css('font-size');
@@ -60,18 +60,18 @@ $z(document).ready(function() {
         return false;
     });
     
-    $z("#diminuir-fonte").click(function() {
-        var size = $z(".nav-link").css('font-size');
+    // $z("#diminuir-fonte").click(function() {
+    //     var size = $z(".nav-link").css('font-size');
 
-        size = size.replace('px', '');
-        size = parseInt(size) - 2;
+    //     size = size.replace('px', '');
+    //     size = parseInt(size) - 2;
 
-        $z(".nav-link").animate({
-            'font-size': size + 'px'
+    //     $z(".nav-link").animate({
+    //         'font-size': size + 'px'
 
-        });
-        return false;
-    });
+    //     });
+    //     return false;
+    // });
     
 
 });

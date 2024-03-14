@@ -1,4 +1,6 @@
 <footer class="footer-card">
+
+
     
     <div class="container footer-conteudo">
         <div class="footer-gov-widger row ">
@@ -8,13 +10,13 @@
                         <div class="footer ">
                             <?php get_sidebar('footer'); ?>
                         </div>
-                        <div class="text-end row align-items-center align-middle col-5">
+                    </div>
+                    <div class="text-end row align-items-center align-middle col-5">
                             <div class="row">
-                                <div class="col-5 footer_custon_logo"><?php the_custom_logo();?></div>
+                                <div class="col-6 footer_custon_logo"><?php the_custom_logo();?></div>
                                 <img class="col-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_governo_colorido.svg" alt="Governo de MS" class="d-none d-md-inline">
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -34,36 +36,24 @@
     </div>
 </footer>
 
-<?php
-function acessibilidade_menu()
-{ ?>
-    <!--------------------------------V-libras----------------------------------->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
+</div>
 
-    <script async src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<!--------------------------------Userway----------------------------------->
 
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <!-------------------------------/V-libras----------------------------------->
-    <!--------------------------------Userway------------------------------------>
+       <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+		<script defer>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "n4LcBHs32d");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+            
+<!--------------------------------/Userway----------------------------------->
 
-    <script async data-account="n4LcBHs32d" src="https://cdn.userway.org/widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-    <!--------------------------------/Userway----------------------------------->
-
-<?php }
-
-add_action('wp_footer', 'acessibilidade_menu', 70);
-
-
-
-wp_footer(); ?>
 
 </body>
         
